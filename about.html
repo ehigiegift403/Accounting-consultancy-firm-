@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — PrimeLedger | Benin City</title>
+  <style>
+    :root{
+      --green:#1fa85a; --dark:#0f1720; --muted:#6b7280; --bg:#f5f6f7; --white:#fff; --max:1100px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui; background:var(--bg); color:var(--dark)}
+    .wrap{max-width:var(--max);margin:28px auto;padding:0 20px}
+    header{display:flex;justify-content:space-between;align-items:center}
+    .brand{display:flex;gap:10px;align-items:center;text-decoration:none;color:var(--dark)}
+    nav{display:flex;gap:12px}
+    nav a{text-decoration:none;color:var(--dark);font-weight:700}
+    .hero{background:var(--white);padding:28px;border-radius:16px;margin-top:18px;box-shadow:0 10px 30px rgba(10,11,12,.04)}
+    h1{margin:0 0 8px;font-size:30px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+    .story{background:linear-gradient(180deg,var(--white),#f9fff8);padding:20px;border-radius:12px}
+    .team{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    .member{background:var(--white);padding:14px;border-radius:12px;text-align:center;box-shadow:0 6px 18px rgba(10,11,12,.03)}
+    .avatar{width:84px;height:84px;border-radius:12px;margin:0 auto 8px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--green),#0aa04f);color:white;font-weight:800}
+    footer{margin:40px 0 80px;color:var(--muted);text-align:center}
+    @media(max-width:860px){.grid{grid-template-columns:1fr}.team{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:520px){.team{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="index.html" class="brand"><div style="width:44px;height:44;background:var(--green);border-radius:10px;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800">PL</div><div style="font-weight:800">PrimeLedger</div></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <h1>About PrimeLedger</h1>
+      <p class="lead">We are an accounting firm based in Benin City, Edo State. Our mission is straightforward: provide clear, compliant and strategic accounting solutions for businesses that want to scale.</p>
+
+      <div class="grid" style="margin-top:12px">
+        <section class="story">
+          <h2 style="margin-top:0">Our story</h2>
+          <p style="color:var(--muted)">Founded by experienced accountants and ex-auditors, PrimeLedger combines deep technical skill with modern tools to reduce friction in tax and reporting. We work with SMEs, startups and family businesses across Edo State.</p>
+
+          <h3 style="margin-top:14px">How we work</h3>
+          <ul style="color:var(--muted);padding-left:18px">
+            <li>Clear onboarding and fixed-fee proposals</li>
+            <li>Monthly reporting and timely compliance</li>
+            <li>Advisory focused on growth and risk management</li>
+          </ul>
+        </section>
+
+        <aside style="background:linear-gradient(180deg,#ffffff,#f0f8f4);padding:18px;border-radius:12px;">
+          <h3 style="margin:0 0 8px">Contact the team</h3>
+          <div style="color:var(--muted);font-size:14px;margin-bottom:10px">Reach out to discuss accounting, tax or audit needs.</div>
+          <div style="font-weight:800">Phone: +234 801 234 5678</div>
+          <div style="margin-top:8px"><a href="contact.html" style="display:inline-block;padding:10px 14px;border-radius:10px;background:var(--green);color:#fff;text-decoration:none;font-weight:700">Send a message</a></div>
+        </aside>
+      </div>
+
+      <h2 style="margin-top:22px">Meet the team</h2>
+      <div class="team">
+        <div class="member">
+          <div class="avatar">AE</div>
+          <div style="font-weight:800">A. Eghosa</div>
+          <div style="color:var(--muted);font-size:14px">Founder & Partner — ACA, 12 yrs experience</div>
+        </div>
+        <div class="member">
+          <div class="avatar">OS</div>
+          <div style="font-weight:800">O. Smith</div>
+          <div style="color:var(--muted);font-size:14px">Senior Auditor — IFRS specialist</div>
+        </div>
+        <div class="member">
+          <div class="avatar">MB</div>
+          <div style="font-weight:800">M. Bello</div>
+          <div style="color:var(--muted);font-size:14px">Tax Consultant — Corporate & SME</div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      © PrimeLedger · Benin City · <span style="color:var(--muted)">We make numbers confident</span>
+    </footer>
+  </div>
+</body>
+</html>

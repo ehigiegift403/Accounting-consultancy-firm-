@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Blog — PrimeLedger</title>
+  <style>
+    :root{--green:#1fa85a;--dark:#0f1720;--muted:#6b7280;--bg:#f5f6f7;--white:#fff;--max:1100px}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui;background:var(--bg);color:var(--dark)}
+    .wrap{max-width:var(--max);margin:28px auto;padding:0 20px}
+    header{display:flex;justify-content:space-between;align-items:center}
+    nav a{margin-left:12px;text-decoration:none;color:var(--dark);font-weight:700}
+    h1{margin:0 0 12px}
+    .list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .post{background:var(--white);padding:16px;border-radius:12px;box-shadow:0 8px 26px rgba(10,11,12,.04)}
+    .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
+    .excerpt{color:var(--muted);font-size:14px}
+    .read{display:inline-block;margin-top:12px;padding:8px 12px;border-radius:10px;background:var(--green);color:white;text-decoration:none;font-weight:700}
+    @media(max-width:940px){.list{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="index.html" style="font-weight:800;text-decoration:none;color:var(--dark)">PrimeLedger</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main style="margin-top:18px">
+      <h1>Latest Articles</h1>
+      <p style="color:var(--muted)">Insights and practical advice for Benin City businesses.</p>
+
+      <div class="list" role="list">
+        <article class="post" role="article">
+          <div class="meta">October 15, 2025 · Tax</div>
+          <h3 style="margin:0 0 8px">3 Tax Mistakes SMEs Make in Benin City</h3>
+          <p class="excerpt">Avoid common pitfalls when filing VAT and PAYE — practical steps to stay compliant and reduce penalties.</p>
+          <a href="#" class="read" onclick="openPost('1')">Read</a>
+        </article>
+
+        <article class="post">
+          <div class="meta">September 30, 2025 · Accounting</div>
+          <h3 style="margin:0 0 8px">Why Regular Financial Reviews Grow Profit</h3>
+          <p class="excerpt">Monthly reporting improves decision-making. Simple KPIs your business should track.</p>
+          <a href="#" class="read" onclick="openPost('2')">Read</a>
+        </article>
+
+        <article class="post">
+          <div class="meta">September 10, 2025 · Advisory</div>
+          <h3 style="margin:0 0 8px">Managing Cashflow During Seasonal Lows</h3>
+          <p class="excerpt">Tactics to preserve liquidity and negotiate supplier terms during slow months.</p>
+          <a href="#" class="read" onclick="openPost('3')">Read</a>
+        </article>
+      </div>
+
+      <div style="margin-top:18px;color:var(--muted)">Want to contribute or request a topic? <a href="contact.html" style="color:var(--green);font-weight:700">Contact us</a>.</div>
+    </main>
+
+    <footer style="margin-top:28px;color:var(--muted);text-align:center">© PrimeLedger — Insights for Benin City businesses</footer>
+  </div>
+
+  <script>
+    function openPost(id){
+      alert('Open article ' + id + ' — replace with live article pages when ready.');
+    }
+  </script>
+</body>
+</html>

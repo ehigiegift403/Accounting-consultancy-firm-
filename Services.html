@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — PrimeLedger</title>
+  <style>
+    :root{--green:#1fa85a;--dark:#0f1720;--muted:#6b7280;--bg:#f5f6f7;--white:#fff;--max:1100px}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui;background:var(--bg);color:var(--dark)}
+    .wrap{max-width:var(--max);margin:28px auto;padding:0 20px}
+    header{display:flex;justify-content:space-between;align-items:center}
+    nav a{margin-left:12px;text-decoration:none;color:var(--dark);font-weight:700}
+    h1{font-size:28px;margin:6px 0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+    .card{background:var(--white);padding:18px;border-radius:14px;box-shadow:0 8px 28px rgba(10,11,12,.04);border-top:6px solid var(--green)}
+    .card h3{margin:0 0 8px}
+    .card p{color:var(--muted);margin:0 0 12px}
+    .card ul{padding-left:18px;color:var(--muted)}
+    .contact-strip{margin-top:22px;background:linear-gradient(90deg,var(--green),#15a94f);color:white;padding:16px;border-radius:12px;display:flex;justify-content:space-between;align-items:center}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="index.html" style="font-weight:800;text-decoration:none;color:var(--dark)">PrimeLedger</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Our Services</h1>
+      <p style="color:var(--muted)">Comprehensive accounting, tax and advisory services tailored to Benin City businesses.</p>
+
+      <div class="grid" aria-live="polite">
+        <section class="card" id="tax">
+          <h3>Tax Compliance & Planning</h3>
+          <p>End-to-end tax support: filing, planning, PAYE, VAT, and dispute resolution.</p>
+          <ul>
+            <li>Corporate tax planning & returns</li>
+            <li>VAT registration and filing</li>
+            <li>PAYE & EMPLOYER RETURNS</li>
+            <li>Tax health checks & risk reviews</li>
+          </ul>
+        </section>
+
+        <section class="card" id="audit">
+          <h3>Statutory & Assurance</h3>
+          <p>Independent audits and assurance that meet regulatory standards and stakeholder expectations.</p>
+          <ul>
+            <li>Statutory audits (SME & corporate)</li>
+            <li>Internal control reviews</li>
+            <li>Financial statement preparation (IFRS-ready)</li>
+          </ul>
+        </section>
+
+        <section class="card" id="advisory">
+          <h3>Business Advisory</h3>
+          <p>Strategic advice to help you scale, manage cash and improve margins.</p>
+          <ul>
+            <li>Budgeting & forecasting</li>
+            <li>Cashflow and working capital improvement</li>
+            <li>Business setup & compliance advisory</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="contact-strip">
+        <div>
+          <div style="font-weight:800">Need a tailored proposal?</div>
+          <div style="color:rgba(255,255,255,.9)">We prepare clear fixed-fee proposals after a short discovery call.</div>
+        </div>
+        <div>
+          <a href="contact.html" style="background:#fff;color:var(--green);padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:800">Request Proposal</a>
+        </div>
+      </div>
+    </main>
+
+    <footer style="margin-top:40px;color:var(--muted);text-align:center">© PrimeLedger — Trusted accounting, Benin City</footer>
+  </div>
+</body>
+</html>
